@@ -44,6 +44,23 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
+        <!-- Default Statcounter code for aidnow.us
+        https://aidnow.us/ -->
+        <script type="text/javascript">
+        var sc_project=13183265; 
+        var sc_invisible=1; 
+        var sc_security="c683260e"; 
+        </script>
+        <script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+        <noscript><div class="statcounter"><a title="Web Analytics
+        Made Easy - Statcounter" href="https://statcounter.com/"
+        target="_blank"><img class="statcounter"
+        src="https://c.statcounter.com/13183265/0/c683260e/1/"
+        alt="Web Analytics Made Easy - Statcounter"
+        referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+        <!-- End of Statcounter Code -->
       </body>
     </html>
   )
