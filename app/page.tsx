@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { Moon, Sun, Shield, Zap, List, Info, CheckCircle, ChevronRight, FileText } from 'lucide-react'
+import Link from 'next/link'
 
 export default function EligibilityPage() {
   const [darkMode, setDarkMode] = useState(false)
@@ -265,19 +266,19 @@ export default function EligibilityPage() {
               <h3 className="font-semibold mb-4">Links</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="#privacy" className="hover:text-foreground transition-colors">
+                  <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#terms" className="hover:text-foreground transition-colors">
+                  <Link href="/terms" className="hover:text-foreground transition-colors">
                     Terms
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-foreground transition-colors">
+                  <Link href="/contact" className="hover:text-foreground transition-colors">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -293,10 +294,10 @@ export default function EligibilityPage() {
                 For accessibility or questions:
               </p>
               <a
-                href="mailto:support@findresourcesusa.com"
+                href="mailto:support@aidnow.us"
                 className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
               >
-                support@findresourcesusa.com
+                support@aidnow.us
               </a>
             </div>
           </div>
